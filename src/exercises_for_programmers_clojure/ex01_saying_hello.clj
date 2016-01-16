@@ -1,5 +1,5 @@
 (ns exercises-for-programmers-clojure.ex01_saying_hello)
 
-(defn -main []
-  (print "What is your name? ")
-  (printf "Hello, %s, nice to meet you!\n" (read-line)))
+(defn greeter []
+  (console/print "What is your name? ")
+  (console/print (format "Hello, %s, nice to meet you!\n" (console/read-line))))
