@@ -5,8 +5,8 @@
 
 (fact
   "greeting greets the user"
-  (-main) => nil
+  (greeter) => nil
   (provided
     (print "What is your name? ") => nil :times 1
-    (read-line) => "Liam"
+    (read-line) => "Liam" :times 1
     (print "Hello, Liam, nice to meet you!\n") => nil :times 1))
